@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS 뽀샤버리기~</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style media="screen">
+        .h {
+            color: aqua;
+        }
+
+        .c {
+            text-decoration: underline;
+        }
+
+        #id-selector {
+            font-size: 30px;
+        }
+
+        .h.c {
+            border: 1px solid;
+        }
+
+        p[class="foo"] {
+            color: silver;
+        }
+
+        p[id="title"] {
+            text-decoration: underline;
+        }
+
+        p[class~="color"] {
+            font-style: italic;
+        }
+
+        p[class^="color"] {
+            font-size: xx-large;
+        }
+
+        p[class$="color"] {
+            color: chocolate;
+        }
+
+        p[class*="color"] {
+            color: darkviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <dl>
+        <dt class="h">HTML</dt>
+        <dd>
+            <span class="h">HTML</span>은 문서의 구조를 나타냅니다.
+        </dd>
+        <dt class="c">CSS</dt>
+        <dd>
+            <span class="c">CSS</span>는 문서의 표현를 나타냅니다.
+        </dd>
+        <dt class="h c">JS</dt>
+        <dd>
+            <span class="h c">JS</span>는 문서의 동작을 나타냅니다.
+        </dd>
+    </dl>
+    <p id="id-selector"><span class="h">ID 선택자</span>는 해쉬 기호를 사용합니다. 해쉬브라운 먹고 싶네..</p>
+    <p class="foo">Hello
+    </p>
+    <p class="bar">CSS
+    </p>
+    <p class="baz" id="title">HTML
+    </p>
+    <p class="color hot">red</p>
+    <p class="cool color">blue</p>
+    <p class="colorful nature">rainbow</p>
+</body>
+
+</html>
