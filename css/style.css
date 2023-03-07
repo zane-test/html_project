@@ -1,19 +1,53 @@
-/* p {
-  color: green;
-} */
-/* 
-.h {
-  color: aqua;
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("/planet.jpg") no-repeat center;
+  /* 위 background는  축약형으로 표현되어 있음.
+  순서는 
+  background: bg-color bg-image position/bg-size bg repeat bg-origin bg-clip bg-attachment initial|inherit */
+  background-size: cover;
+}
+body::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.8);
 }
 
-.c {
-  text-decoration: underline;
-} */
-
-/* .j {
-  color: purple;
+.login-form {
+  position: relative;
+  z-index: 2;
+}
+.login-form h1 {
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
 }
 
-.s {
-  text-decoration: underline;
-} */
+.int-area {
+  width: 400px;
+}
+.int-area input {
+  width: 100%;
+  padding: 20px 10px 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #999;
+}
